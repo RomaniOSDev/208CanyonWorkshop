@@ -3,33 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		301FCA982FD2D3A40019443E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FCA8E2FD2D3A40019443E /* AppDelegate.swift */; };
+		301FCA992FD2D3A40019443E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FCA952FD2D3A40019443E /* SceneDelegate.swift */; };
+		301FCA9A2FD2D3A40019443E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FCA962FD2D3A40019443E /* ViewController.swift */; };
+		301FCA9B2FD2D3A40019443E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301FCA8F2FD2D3A40019443E /* Assets.xcassets */; };
+		301FCA9D2FD2D3A40019443E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FCA922FD2D3A40019443E /* LaunchScreen.storyboard */; };
+		301FCA9E2FD2D3A40019443E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FCA942FD2D3A40019443E /* Main.storyboard */; };
+		301FCAA02FD2D3C80019443E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FCA9F2FD2D3C80019443E /* ContentView.swift */; };
+		8A11B0013CD0F50010000001 /* Core/AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1013CD0F50010000001 /* Core/AppStorage.swift */; };
+		8A11B0023CD0F50010000001 /* Core/FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1023CD0F50010000001 /* Core/FeedbackService.swift */; };
+		8A11B0033CD0F50010000001 /* Shared/SharedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1033CD0F50010000001 /* Shared/SharedUI.swift */; };
+		8A11B0043CD0F50010000001 /* Main/MainTabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1043CD0F50010000001 /* Main/MainTabContainerView.swift */; };
+		8A11B0053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift */; };
+		8A11B0063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift */; };
+		8A11B0073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift */; };
+		8A11B0083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift */; };
+		8A11B0093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift */; };
+		8A11B00A3CD0F50010000001 /* Features/Captions/MusicCaptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10A3CD0F50010000001 /* Features/Captions/MusicCaptionsView.swift */; };
+		8A11B00B3CD0F50010000001 /* Features/Captions/MusicCaptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10B3CD0F50010000001 /* Features/Captions/MusicCaptionsViewModel.swift */; };
+		8A11B00C3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10C3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverView.swift */; };
+		8A11B00D3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10D3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverViewModel.swift */; };
+		8A11B00E3CD0F50010000001 /* Features/Stats/StatsAchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10E3CD0F50010000001 /* Features/Stats/StatsAchievementsView.swift */; };
+		8A11B00F3CD0F50010000001 /* Features/Stats/StatsAchievementsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B10F3CD0F50010000001 /* Features/Stats/StatsAchievementsViewModel.swift */; };
+		8A11B0103CD0F50010000001 /* Features/Settings/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1103CD0F50010000001 /* Features/Settings/SettingsView.swift */; };
+		8A11B0113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift */; };
+		8A11B0123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift */; };
+		8A11B0133CD0F50010000001 /* privacy_policy.md in Resources */ = {isa = PBXBuildFile; fileRef = 8A11B1133CD0F50010000001 /* privacy_policy.md */; };
+		8A11B0143CD0F50010000001 /* Main/AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1143CD0F50010000001 /* Main/AppTab.swift */; };
+		8A11B0153CD0F50010000001 /* Features/Home/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1153CD0F50010000001 /* Features/Home/HomeView.swift */; };
+		8A11B0163CD0F50010000001 /* Features/Home/HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1163CD0F50010000001 /* Features/Home/HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		20D1223AD1D9A50C5A05D51A /* Pods-208CanyonWorkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-208CanyonWorkshop.release.xcconfig"; path = "Target Support Files/Pods-208CanyonWorkshop/Pods-208CanyonWorkshop.release.xcconfig"; sourceTree = "<group>"; };
 		301FCA762FD2D3920019443E /* 208CanyonWorkshop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 208CanyonWorkshop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		301FCA8E2FD2D3A40019443E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		301FCA8F2FD2D3A40019443E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		301FCA902FD2D3A40019443E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		301FCA912FD2D3A40019443E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		301FCA932FD2D3A40019443E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		301FCA952FD2D3A40019443E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		301FCA962FD2D3A40019443E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		301FCA9F2FD2D3C80019443E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4E2E4BF38C62D203EDBE18B5 /* Pods_208CanyonWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_208CanyonWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C68D07034AAD913285DCE0 /* Pods-208CanyonWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-208CanyonWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-208CanyonWorkshop/Pods-208CanyonWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
+		8A11B1013CD0F50010000001 /* Core/AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AppStorage.swift; sourceTree = "<group>"; };
+		8A11B1023CD0F50010000001 /* Core/FeedbackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/FeedbackService.swift; sourceTree = "<group>"; };
+		8A11B1033CD0F50010000001 /* Shared/SharedUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared/SharedUI.swift; sourceTree = "<group>"; };
+		8A11B1043CD0F50010000001 /* Main/MainTabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main/MainTabContainerView.swift; sourceTree = "<group>"; };
+		8A11B1053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingView.swift; sourceTree = "<group>"; };
+		8A11B1063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Onboarding/OnboardingViewModel.swift; sourceTree = "<group>"; };
+		8A11B1073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Gallery/AnnotationGalleryView.swift; sourceTree = "<group>"; };
+		8A11B1083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Gallery/AnnotationGalleryViewModel.swift; sourceTree = "<group>"; };
+		8A11B1093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Workbench/CaptionsDiscoverWorkbenchView.swift; sourceTree = "<group>"; };
+		8A11B10A3CD0F50010000001 /* Features/Captions/MusicCaptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Captions/MusicCaptionsView.swift; sourceTree = "<group>"; };
+		8A11B10B3CD0F50010000001 /* Features/Captions/MusicCaptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Captions/MusicCaptionsViewModel.swift; sourceTree = "<group>"; };
+		8A11B10C3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Discover/MusicNotesDiscoverView.swift; sourceTree = "<group>"; };
+		8A11B10D3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Discover/MusicNotesDiscoverViewModel.swift; sourceTree = "<group>"; };
+		8A11B10E3CD0F50010000001 /* Features/Stats/StatsAchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Stats/StatsAchievementsView.swift; sourceTree = "<group>"; };
+		8A11B10F3CD0F50010000001 /* Features/Stats/StatsAchievementsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Stats/StatsAchievementsViewModel.swift; sourceTree = "<group>"; };
+		8A11B1103CD0F50010000001 /* Features/Settings/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsView.swift; sourceTree = "<group>"; };
+		8A11B1113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/SettingsViewModel.swift; sourceTree = "<group>"; };
+		8A11B1123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Settings/PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		8A11B1133CD0F50010000001 /* privacy_policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy_policy.md; sourceTree = "<group>"; };
+		8A11B1143CD0F50010000001 /* Main/AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main/AppTab.swift; sourceTree = "<group>"; };
+		8A11B1153CD0F50010000001 /* Features/Home/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		8A11B1163CD0F50010000001 /* Features/Home/HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features/Home/HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		301FCA882FD2D3930019443E /* Exceptions for "208CanyonWorkshop" folder in "208CanyonWorkshop" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 301FCA752FD2D3920019443E /* 208CanyonWorkshop */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		301FCA782FD2D3920019443E /* 208CanyonWorkshop */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				301FCA882FD2D3930019443E /* Exceptions for "208CanyonWorkshop" folder in "208CanyonWorkshop" target */,
-			);
-			path = 208CanyonWorkshop;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		301FCA732FD2D3920019443E /* Frameworks */ = {
@@ -45,8 +89,10 @@
 		301FCA6D2FD2D3920019443E = {
 			isa = PBXGroup;
 			children = (
-				301FCA782FD2D3920019443E /* 208CanyonWorkshop */,
+				301FCA972FD2D3A40019443E /* 208CanyonWorkshop */,
 				301FCA772FD2D3920019443E /* Products */,
+				71B8B235D68249CBA6A6BC80 /* Pods */,
+				C1C00D883908A04421A0AA85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +104,68 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		301FCA972FD2D3A40019443E /* 208CanyonWorkshop */ = {
+			isa = PBXGroup;
+			children = (
+				301FCAA12FD2D78B0019443E /* New Group */,
+				301FCA8E2FD2D3A40019443E /* AppDelegate.swift */,
+				301FCA8F2FD2D3A40019443E /* Assets.xcassets */,
+				301FCA902FD2D3A40019443E /* Info.plist */,
+				301FCA922FD2D3A40019443E /* LaunchScreen.storyboard */,
+				301FCA942FD2D3A40019443E /* Main.storyboard */,
+				301FCA952FD2D3A40019443E /* SceneDelegate.swift */,
+				301FCA962FD2D3A40019443E /* ViewController.swift */,
+				301FCA9F2FD2D3C80019443E /* ContentView.swift */,
+				8A11B1013CD0F50010000001 /* Core/AppStorage.swift */,
+				8A11B1023CD0F50010000001 /* Core/FeedbackService.swift */,
+				8A11B1033CD0F50010000001 /* Shared/SharedUI.swift */,
+				8A11B1043CD0F50010000001 /* Main/MainTabContainerView.swift */,
+				8A11B1143CD0F50010000001 /* Main/AppTab.swift */,
+				8A11B1153CD0F50010000001 /* Features/Home/HomeView.swift */,
+				8A11B1163CD0F50010000001 /* Features/Home/HomeViewModel.swift */,
+				8A11B1053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift */,
+				8A11B1063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift */,
+				8A11B1073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift */,
+				8A11B1083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift */,
+				8A11B1093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift */,
+				8A11B10A3CD0F50010000001 /* Features/Captions/MusicCaptionsView.swift */,
+				8A11B10B3CD0F50010000001 /* Features/Captions/MusicCaptionsViewModel.swift */,
+				8A11B10C3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverView.swift */,
+				8A11B10D3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverViewModel.swift */,
+				8A11B10E3CD0F50010000001 /* Features/Stats/StatsAchievementsView.swift */,
+				8A11B10F3CD0F50010000001 /* Features/Stats/StatsAchievementsViewModel.swift */,
+				8A11B1103CD0F50010000001 /* Features/Settings/SettingsView.swift */,
+				8A11B1113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift */,
+				8A11B1123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift */,
+				8A11B1133CD0F50010000001 /* privacy_policy.md */,
+			);
+			path = 208CanyonWorkshop;
+			sourceTree = "<group>";
+		};
+		301FCAA12FD2D78B0019443E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		71B8B235D68249CBA6A6BC80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61C68D07034AAD913285DCE0 /* Pods-208CanyonWorkshop.debug.xcconfig */,
+				20D1223AD1D9A50C5A05D51A /* Pods-208CanyonWorkshop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C1C00D883908A04421A0AA85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E2E4BF38C62D203EDBE18B5 /* Pods_208CanyonWorkshop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 301FCA892FD2D3930019443E /* Build configuration list for PBXNativeTarget "208CanyonWorkshop" */;
 			buildPhases = (
+				A16B0050BF13BBC1DBA3CC07 /* [CP] Check Pods Manifest.lock */,
 				301FCA722FD2D3920019443E /* Sources */,
 				301FCA732FD2D3920019443E /* Frameworks */,
 				301FCA742FD2D3920019443E /* Resources */,
@@ -73,12 +182,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				301FCA782FD2D3920019443E /* 208CanyonWorkshop */,
-			);
 			name = 208CanyonWorkshop;
-			packageProductDependencies = (
-			);
 			productName = 208CanyonWorkshop;
 			productReference = 301FCA762FD2D3920019443E /* 208CanyonWorkshop.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +203,7 @@
 				};
 			};
 			buildConfigurationList = 301FCA712FD2D3920019443E /* Build configuration list for PBXProject "208CanyonWorkshop" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +211,6 @@
 				Base,
 			);
 			mainGroup = 301FCA6D2FD2D3920019443E;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 301FCA772FD2D3920019443E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,24 +225,98 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301FCA9B2FD2D3A40019443E /* Assets.xcassets in Resources */,
+				301FCA9D2FD2D3A40019443E /* LaunchScreen.storyboard in Resources */,
+				301FCA9E2FD2D3A40019443E /* Main.storyboard in Resources */,
+				8A11B0133CD0F50010000001 /* privacy_policy.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A16B0050BF13BBC1DBA3CC07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-208CanyonWorkshop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		301FCA722FD2D3920019443E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301FCA982FD2D3A40019443E /* AppDelegate.swift in Sources */,
+				301FCA992FD2D3A40019443E /* SceneDelegate.swift in Sources */,
+				301FCAA02FD2D3C80019443E /* ContentView.swift in Sources */,
+				301FCA9A2FD2D3A40019443E /* ViewController.swift in Sources */,
+				8A11B0013CD0F50010000001 /* Core/AppStorage.swift in Sources */,
+				8A11B0023CD0F50010000001 /* Core/FeedbackService.swift in Sources */,
+				8A11B0033CD0F50010000001 /* Shared/SharedUI.swift in Sources */,
+				8A11B0043CD0F50010000001 /* Main/MainTabContainerView.swift in Sources */,
+				8A11B0143CD0F50010000001 /* Main/AppTab.swift in Sources */,
+				8A11B0153CD0F50010000001 /* Features/Home/HomeView.swift in Sources */,
+				8A11B0163CD0F50010000001 /* Features/Home/HomeViewModel.swift in Sources */,
+				8A11B0053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift in Sources */,
+				8A11B0063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift in Sources */,
+				8A11B0073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift in Sources */,
+				8A11B0083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift in Sources */,
+				8A11B0093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift in Sources */,
+				8A11B00A3CD0F50010000001 /* Features/Captions/MusicCaptionsView.swift in Sources */,
+				8A11B00B3CD0F50010000001 /* Features/Captions/MusicCaptionsViewModel.swift in Sources */,
+				8A11B00C3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverView.swift in Sources */,
+				8A11B00D3CD0F50010000001 /* Features/Discover/MusicNotesDiscoverViewModel.swift in Sources */,
+				8A11B00E3CD0F50010000001 /* Features/Stats/StatsAchievementsView.swift in Sources */,
+				8A11B00F3CD0F50010000001 /* Features/Stats/StatsAchievementsViewModel.swift in Sources */,
+				8A11B0103CD0F50010000001 /* Features/Settings/SettingsView.swift in Sources */,
+				8A11B0113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift in Sources */,
+				8A11B0123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		301FCA922FD2D3A40019443E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301FCA912FD2D3A40019443E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		301FCA942FD2D3A40019443E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				301FCA932FD2D3A40019443E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		301FCA8A2FD2D3930019443E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C68D07034AAD913285DCE0 /* Pods-208CanyonWorkshop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -147,30 +324,39 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 208CanyonWorkshop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Canyon Workshop";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-08CanyonWorkshop";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arg.c3n09nw0rksh2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		301FCA8B2FD2D3930019443E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D1223AD1D9A50C5A05D51A /* Pods-208CanyonWorkshop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -178,25 +364,33 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 208CanyonWorkshop/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Canyon Workshop";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-08CanyonWorkshop";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arg.c3n09nw0rksh2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
