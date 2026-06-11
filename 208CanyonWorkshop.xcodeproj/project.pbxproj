@@ -14,6 +14,20 @@
 		301FCA9D2FD2D3A40019443E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FCA922FD2D3A40019443E /* LaunchScreen.storyboard */; };
 		301FCA9E2FD2D3A40019443E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301FCA942FD2D3A40019443E /* Main.storyboard */; };
 		301FCAA02FD2D3C80019443E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301FCA9F2FD2D3C80019443E /* ContentView.swift */; };
+		304235AB2FDAE674003E0977 /* CalendarGateEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042359D2FDAE674003E0977 /* CalendarGateEvaluator.swift */; };
+		304235AC2FDAE674003E0977 /* RemoteEntryProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A62FDAE674003E0977 /* RemoteEntryProbe.swift */; };
+		304235AD2FDAE674003E0977 /* LaunchStagingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A52FDAE674003E0977 /* LaunchStagingState.swift */; };
+		304235AE2FDAE674003E0977 /* LaunchFlowDebugOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A02FDAE674003E0977 /* LaunchFlowDebugOptions.swift */; };
+		304235AF2FDAE674003E0977 /* LaunchDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042359F2FDAE674003E0977 /* LaunchDestination.swift */; };
+		304235B02FDAE674003E0977 /* DeferredLaunchCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3042359E2FDAE674003E0977 /* DeferredLaunchCanvas.swift */; };
+		304235B12FDAE674003E0977 /* LaunchFlowSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A32FDAE674003E0977 /* LaunchFlowSecrets.swift */; };
+		304235B22FDAE674003E0977 /* RootWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A82FDAE674003E0977 /* RootWindowPresenter.swift */; };
+		304235B32FDAE674003E0977 /* LaunchFlowResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A22FDAE674003E0977 /* LaunchFlowResolver.swift */; };
+		304235B42FDAE674003E0977 /* WebDocumentSurfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A92FDAE674003E0977 /* WebDocumentSurfaceView.swift */; };
+		304235B52FDAE674003E0977 /* LaunchFlowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A12FDAE674003E0977 /* LaunchFlowLogger.swift */; };
+		304235B62FDAE674003E0977 /* RemoteEntryURLComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A72FDAE674003E0977 /* RemoteEntryURLComposer.swift */; };
+		304235B72FDAE674003E0977 /* LaunchSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235A42FDAE674003E0977 /* LaunchSessionStore.swift */; };
+		304235B92FDAE678003E0977 /* AppMarketingCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304235B82FDAE678003E0977 /* AppMarketingCopy.swift */; };
 		8A11B0013CD0F50010000001 /* Core/AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1013CD0F50010000001 /* Core/AppStorage.swift */; };
 		8A11B0023CD0F50010000001 /* Core/FeedbackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1023CD0F50010000001 /* Core/FeedbackService.swift */; };
 		8A11B0033CD0F50010000001 /* Shared/SharedUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A11B1033CD0F50010000001 /* Shared/SharedUI.swift */; };
@@ -49,6 +63,20 @@
 		301FCA952FD2D3A40019443E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		301FCA962FD2D3A40019443E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		301FCA9F2FD2D3C80019443E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3042359D2FDAE674003E0977 /* CalendarGateEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarGateEvaluator.swift; sourceTree = "<group>"; };
+		3042359E2FDAE674003E0977 /* DeferredLaunchCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredLaunchCanvas.swift; sourceTree = "<group>"; };
+		3042359F2FDAE674003E0977 /* LaunchDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDestination.swift; sourceTree = "<group>"; };
+		304235A02FDAE674003E0977 /* LaunchFlowDebugOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowDebugOptions.swift; sourceTree = "<group>"; };
+		304235A12FDAE674003E0977 /* LaunchFlowLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowLogger.swift; sourceTree = "<group>"; };
+		304235A22FDAE674003E0977 /* LaunchFlowResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowResolver.swift; sourceTree = "<group>"; };
+		304235A32FDAE674003E0977 /* LaunchFlowSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchFlowSecrets.swift; sourceTree = "<group>"; };
+		304235A42FDAE674003E0977 /* LaunchSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSessionStore.swift; sourceTree = "<group>"; };
+		304235A52FDAE674003E0977 /* LaunchStagingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStagingState.swift; sourceTree = "<group>"; };
+		304235A62FDAE674003E0977 /* RemoteEntryProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEntryProbe.swift; sourceTree = "<group>"; };
+		304235A72FDAE674003E0977 /* RemoteEntryURLComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEntryURLComposer.swift; sourceTree = "<group>"; };
+		304235A82FDAE674003E0977 /* RootWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWindowPresenter.swift; sourceTree = "<group>"; };
+		304235A92FDAE674003E0977 /* WebDocumentSurfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebDocumentSurfaceView.swift; sourceTree = "<group>"; };
+		304235B82FDAE678003E0977 /* AppMarketingCopy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMarketingCopy.swift; sourceTree = "<group>"; };
 		4E2E4BF38C62D203EDBE18B5 /* Pods_208CanyonWorkshop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_208CanyonWorkshop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C68D07034AAD913285DCE0 /* Pods-208CanyonWorkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-208CanyonWorkshop.debug.xcconfig"; path = "Target Support Files/Pods-208CanyonWorkshop/Pods-208CanyonWorkshop.debug.xcconfig"; sourceTree = "<group>"; };
 		8A11B1013CD0F50010000001 /* Core/AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AppStorage.swift; sourceTree = "<group>"; };
@@ -138,6 +166,8 @@
 				8A11B1113CD0F50010000001 /* Features/Settings/SettingsViewModel.swift */,
 				8A11B1123CD0F50010000001 /* Features/Settings/PrivacyPolicyView.swift */,
 				8A11B1133CD0F50010000001 /* privacy_policy.md */,
+				304235AA2FDAE674003E0977 /* LaunchFlow */,
+				304235B82FDAE678003E0977 /* AppMarketingCopy.swift */,
 			);
 			path = 208CanyonWorkshop;
 			sourceTree = "<group>";
@@ -147,6 +177,26 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		304235AA2FDAE674003E0977 /* LaunchFlow */ = {
+			isa = PBXGroup;
+			children = (
+				3042359D2FDAE674003E0977 /* CalendarGateEvaluator.swift */,
+				3042359E2FDAE674003E0977 /* DeferredLaunchCanvas.swift */,
+				3042359F2FDAE674003E0977 /* LaunchDestination.swift */,
+				304235A02FDAE674003E0977 /* LaunchFlowDebugOptions.swift */,
+				304235A12FDAE674003E0977 /* LaunchFlowLogger.swift */,
+				304235A22FDAE674003E0977 /* LaunchFlowResolver.swift */,
+				304235A32FDAE674003E0977 /* LaunchFlowSecrets.swift */,
+				304235A42FDAE674003E0977 /* LaunchSessionStore.swift */,
+				304235A52FDAE674003E0977 /* LaunchStagingState.swift */,
+				304235A62FDAE674003E0977 /* RemoteEntryProbe.swift */,
+				304235A72FDAE674003E0977 /* RemoteEntryURLComposer.swift */,
+				304235A82FDAE674003E0977 /* RootWindowPresenter.swift */,
+				304235A92FDAE674003E0977 /* WebDocumentSurfaceView.swift */,
+			);
+			path = LaunchFlow;
 			sourceTree = "<group>";
 		};
 		71B8B235D68249CBA6A6BC80 /* Pods */ = {
@@ -277,6 +327,20 @@
 				8A11B0163CD0F50010000001 /* Features/Home/HomeViewModel.swift in Sources */,
 				8A11B0053CD0F50010000001 /* Features/Onboarding/OnboardingView.swift in Sources */,
 				8A11B0063CD0F50010000001 /* Features/Onboarding/OnboardingViewModel.swift in Sources */,
+				304235AB2FDAE674003E0977 /* CalendarGateEvaluator.swift in Sources */,
+				304235AC2FDAE674003E0977 /* RemoteEntryProbe.swift in Sources */,
+				304235AD2FDAE674003E0977 /* LaunchStagingState.swift in Sources */,
+				304235AE2FDAE674003E0977 /* LaunchFlowDebugOptions.swift in Sources */,
+				304235AF2FDAE674003E0977 /* LaunchDestination.swift in Sources */,
+				304235B02FDAE674003E0977 /* DeferredLaunchCanvas.swift in Sources */,
+				304235B12FDAE674003E0977 /* LaunchFlowSecrets.swift in Sources */,
+				304235B22FDAE674003E0977 /* RootWindowPresenter.swift in Sources */,
+				304235B32FDAE674003E0977 /* LaunchFlowResolver.swift in Sources */,
+				304235B42FDAE674003E0977 /* WebDocumentSurfaceView.swift in Sources */,
+				304235B92FDAE678003E0977 /* AppMarketingCopy.swift in Sources */,
+				304235B52FDAE674003E0977 /* LaunchFlowLogger.swift in Sources */,
+				304235B62FDAE674003E0977 /* RemoteEntryURLComposer.swift in Sources */,
+				304235B72FDAE674003E0977 /* LaunchSessionStore.swift in Sources */,
 				8A11B0073CD0F50010000001 /* Features/Gallery/AnnotationGalleryView.swift in Sources */,
 				8A11B0083CD0F50010000001 /* Features/Gallery/AnnotationGalleryViewModel.swift in Sources */,
 				8A11B0093CD0F50010000001 /* Features/Workbench/CaptionsDiscoverWorkbenchView.swift in Sources */,
@@ -337,7 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arg.c3n09nw0rksh2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -377,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arg.c3n09nw0rksh2p;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
