@@ -12,6 +12,7 @@ final class LaunchSessionStore {
     private let defaults = UserDefaults.standard
     private var lastURLKey: String { LaunchFlowSecrets.persistedNavigationURLKey }
     private var nativeShellKey: String { LaunchFlowSecrets.nativeShellPresentedKey }
+    private var validatedWebEntryKey: String { LaunchFlowSecrets.validatedWebEntryKey }
 
     /// Persisted document URL after first successful WebView load (`LastUrl`).
     var savedLastURL: URL? {
@@ -34,6 +35,27 @@ final class LaunchSessionStore {
     var hasShownNativeShell: Bool {
         get { defaults.bool(forKey: nativeShellKey) }
         set { defaults.set(newValue, forKey: nativeShellKey) }
+    }
+
+    var hasValidatedWebEntry: Bool {
+        get { defaults.bool(forKey: validatedWebEntryKey) }
+        set { defaults.set(newValue, forKey: validatedWebEntryKey) }
+    }
+
+    func markWebEntryValidated(url: URL) {
+        savedLastURL = url
+        hasValidatedWebEntry = true
+    }
+
+    func clearWebEntryState() {
+        defaults.removeObject(forKey: lastURLKey)
+        defaults.removeObject(forKey: validatedWebEntryKey)
+    }
+
+    func reconcileLegacyWebPersistence() {
+        if savedLastURL != nil && !hasValidatedWebEntry {
+            clearWebEntryState()
+        }
     }
 
     private init() {}

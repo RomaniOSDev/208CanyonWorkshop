@@ -109,6 +109,8 @@ struct WebDocumentHostRepresentable: UIViewRepresentable {
         var parent: WebDocumentHostRepresentable
         private weak var attachedWebView: WKWebView?
         private var failureCalled = false
+        private var loadTimeoutTimer: Timer?
+        private let loadTimeout: TimeInterval = 12
 
         init(parent: WebDocumentHostRepresentable) {
             self.parent = parent
@@ -154,31 +156,87 @@ struct WebDocumentHostRepresentable: UIViewRepresentable {
 
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
             parent.isLoading = true
+            startLoadTimeout()
         }
 
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             parent.canGoBack = webView.canGoBack
-            parent.isLoading = false
-            if LaunchSessionStore.shared.savedLastURL == nil, let current = webView.url {
-                LaunchSessionStore.shared.savedLastURL = current
-            }
+            cancelLoadTimeout()
+            validateLoadedContent(webView)
         }
 
         func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
             parent.isLoading = false
+            cancelLoadTimeout()
             triggerFailureIfNeeded()
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
             parent.isLoading = false
-            if LaunchSessionStore.shared.savedLastURL == nil {
-                triggerFailureIfNeeded()
+            cancelLoadTimeout()
+            triggerFailureIfNeeded()
+        }
+
+        private func startLoadTimeout() {
+            cancelLoadTimeout()
+            loadTimeoutTimer = Timer.scheduledTimer(withTimeInterval: loadTimeout, repeats: false) { [weak self] _ in
+                self?.handleLoadTimeout()
+            }
+        }
+
+        private func cancelLoadTimeout() {
+            loadTimeoutTimer?.invalidate()
+            loadTimeoutTimer = nil
+        }
+
+        private func handleLoadTimeout() {
+            parent.isLoading = false
+            if LaunchSessionStore.shared.hasValidatedWebEntry {
+                return
+            }
+            triggerFailureIfNeeded()
+        }
+
+        private func validateLoadedContent(_ webView: WKWebView) {
+            let js = """
+            (function() {
+              var b = document && document.body;
+              if (!b) { return { ok:false, textLen:0, htmlLen:0, childCount:0 }; }
+              var t = (b.innerText || '').trim().length;
+              var h = (b.innerHTML || '').trim().length;
+              var c = b.children ? b.children.length : 0;
+              var ok = t >= 20 && h >= 30 && !(t === 0 && c === 0);
+              return { ok: ok, textLen: t, htmlLen: h, childCount: c };
+            })();
+            """
+
+            webView.evaluateJavaScript(js) { [weak self] result, _ in
+                guard let self else { return }
+                self.parent.isLoading = false
+
+                if LaunchSessionStore.shared.hasValidatedWebEntry {
+                    return
+                }
+
+                guard
+                    let dict = result as? [String: Any],
+                    let ok = dict["ok"] as? Bool,
+                    ok,
+                    let currentURL = webView.url
+                else {
+                    self.triggerFailureIfNeeded()
+                    return
+                }
+
+                LaunchSessionStore.shared.markWebEntryValidated(url: currentURL)
             }
         }
 
         private func triggerFailureIfNeeded() {
-            guard LaunchSessionStore.shared.savedLastURL == nil, !failureCalled else { return }
+            guard !failureCalled else { return }
             failureCalled = true
+            cancelLoadTimeout()
+            LaunchSessionStore.shared.clearWebEntryState()
             LaunchSessionStore.shared.hasShownNativeShell = true
             DispatchQueue.main.async { self.parent.onFailure() }
         }

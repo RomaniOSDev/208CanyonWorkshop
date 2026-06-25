@@ -40,6 +40,8 @@ final class LaunchFlowResolver {
     // MARK: - Destination resolution
 
     func resolveDestination() -> LaunchDestination {
+        sessionStore.reconcileLegacyWebPersistence()
+
         #if DEBUG
         switch LaunchFlowDebugOptions.current {
         case .forceNative:
@@ -64,7 +66,7 @@ final class LaunchFlowResolver {
         }
 
         if gateEvaluator.isGateOpen() {
-            if let saved = sessionStore.savedLastURL {
+            if sessionStore.hasValidatedWebEntry, let saved = sessionStore.savedLastURL {
                 return .web(saved)
             }
             return .staging
@@ -142,6 +144,7 @@ final class LaunchFlowResolver {
         if success, let finalURL {
             pivotToWeb(url: finalURL)
         } else {
+            sessionStore.clearWebEntryState()
             sessionStore.hasShownNativeShell = true
             pivotToNative()
         }
